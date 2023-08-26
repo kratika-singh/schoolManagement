@@ -1,0 +1,2 @@
+# schoolManagement
+ Hello everyone, my name is Kratika Singh, and I'm delighted to present my latest project, a school management tool that I've developed for a local school. As someone who's passionate about education and technology, I saw an opportunity to create a tool that would make it easier for the school to manage their day-to-day operations and provide a better learning experience for their students.

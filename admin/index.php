@@ -124,6 +124,12 @@ echo "<br>";
                     </a>
                 </li>
                 <li>
+                    <a href="calender.php">
+                    <i class="fa-regular fa-calendar-check"></i>
+                        <span>Calender</span>
+                    </a>
+                </li>
+                <li>
                     <a href="changePassword.php">
                         <i class="fa-solid fa-wrench"></i>
                         <span>Change Password</span>

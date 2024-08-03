@@ -9,31 +9,34 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/07c5373a02.js" crossorigin="anonymous"></script>
-        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
-        <link rel="stylesheet" href="style.css">
-   
-<style>
-    a{
-        color: black;
-        text-decoration: none;
-    }
-    #newsletter {
-    background-image: url(hero1.jpg);
-    background-repeat: no-repeat; 
-    background-position: 20% 30%;
-    background-color: #041e42;
-}
-.newstext{
-    text-align: center;
-    color: white;
-    }
-</style>
+    <script src="https://kit.fontawesome.com/07c5373a02.js" crossorigin="anonymous"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #newsletter {
+            background-image: url(hero1.jpg);
+            background-repeat: no-repeat;
+            background-position: 20% 30%;
+            background-color: #041e42;
+        }
+
+        .newstext {
+            text-align: center;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/hi_IN/sdk.js#xfbml=1&version=v16.0" nonce="nRs2vRYH"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/hi_IN/sdk.js#xfbml=1&version=v16.0"
+        nonce="nRs2vRYH"></script>
     <section id="header">
         <a href="#"><img src="images/Logo/Logo-with-text.jpg" alt="" width="200px" height="100px"></a>
         <div>
@@ -49,32 +52,32 @@
     </section>
 
     <Section id="hero">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="images/home/hero1.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="images/home/hero2.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="images/home/hero3.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/home/hero1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/home/hero2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/home/hero3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </Section>
     <section>
         <div class="container" style="margin-top: 9%; margin-bottom: 2%; ">
@@ -106,53 +109,62 @@
     <section style="margin-top: 70px">
         <div class="row">
             <div id='calendar' class="single-column col-md-5 col-sm-9" style="margin: 50px;"></div>
-            
-            <div class="fb-page single-column col-md-5 col-sm-9" data-href="https://www.facebook.com/profile.php?id=100088898552627" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/profile.php?id=100088898552627" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100088898552627">Shri R.B.Singh Public School Nasirpur </a></blockquote></div>   
-        </section>
-        <section class="py-5">
-                <div class="container my-5">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6">
-                            <h2>Notice Board</h2>
-                            <hr color="#000" />
-                            <marquee direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
-                       <ul>
-                    <li>
 
-<?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "school_db";
-// $user = $_GET['username'];
-$conn = mysqli_connect($servername, $username, $password, $database);
-$sql = "SELECT * FROM `notice`";
-                    $result = mysqli_query($conn, $sql);
-                    $sno = 0;
-                    while ($row = mysqli_fetch_assoc($result)) {
-                            $sno +=1;
-
-
-                        echo 
-$row['description'];
-                     echo '<br>';
-                    }
-                
-    ?></li>
-                       </ul>
-                   </marquee>
-    
-                        </div>
-                    </div>
-                </div>
-            </section>
-        <section id="newsletter" class="section-p1 section-m1">
-            <div class="newstext">
-                "Education is the best friend. An educated person is respected everywhere. Education beats the beauty and the youth." - Chanakya
+            <div class="fb-page single-column col-md-5 col-sm-9"
+                data-href="https://www.facebook.com/profile.php?id=100088898552627" data-tabs="timeline"
+                data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true"
+                data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/profile.php?id=100088898552627"
+                    class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100088898552627">Shri
+                        R.B.Singh Public School Nasirpur </a></blockquote>
             </div>
-            
-        </section>
+    </section>
+    <section class="py-5">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h2>Notice Board</h2>
+                    <hr color="#000" />
+                    <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                        <ul>
+                            <li>
+
+                                <?php
+
+                                $servername = "localhost";
+                                $username = "root";
+                                $password = "";
+                                $database = "school_db";
+                                // $user = $_GET['username'];
+                                $conn = mysqli_connect($servername, $username, $password, $database);
+                                $sql = "SELECT * FROM `notice`";
+                                $result = mysqli_query($conn, $sql);
+                                $sno = 0;
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    $sno += 1;
+
+
+                                    echo
+                                        $row['description'];
+                                    echo '<br>';
+                                }
+
+                                ?>
+                            </li>
+                        </ul>
+                    </marquee>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            "Education is the best friend. An educated person is respected everywhere. Education beats the beauty and
+            the youth." - Chanakya
+        </div>
+
+    </section>
 
     <footer class="section-p1">
         <div class="col">
@@ -209,14 +221,14 @@ $row['description'];
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script>
-     
-      document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth'
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth'
+            });
+            calendar.render();
         });
-        calendar.render();
-      });
     </script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 

@@ -170,7 +170,7 @@ a {
   transition: background-color .3s;
 }
 
-.nav__link:hover {
+.nav__link:hover,.active{
   color: var(--title-color-dark);
 }
 
@@ -244,7 +244,6 @@ a {
 .dropdown__item:hover .dropdown__arrow {
   transform: rotate(180deg);
 }
-
 /*=============== DROPDOWN SUBMENU ===============*/
 .dropdown__add {
   margin-left: auto;
@@ -265,6 +264,7 @@ a {
     padding-inline: 1rem;
   }
 }
+
 
 /* For large devices */
 @media screen and (min-width: 1118px) {
@@ -538,6 +538,10 @@ a {
   margin-right: 30px;
 
 }
+#footer .footer-container .f-aboutus{
+  width: 40%;
+}
+
 #footer .footer-container h2{
   position: relative;
   font-size: 20px;
@@ -586,14 +590,24 @@ a {
 }
 .f-contact .info li span{
   color: var(--title-color-dark);
-}
-.f-contact .info li:nth-child(1){
-  color: var(--title-color);
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .f-contact .info li a{
   color: var(--title-color);
 }
 .f-contact .info li a:hover{
+  color: var(--title-color-dark);
+}
+.copyright p{
+  width: 100%;
+  text-align: center;
+  background-color:var(--container-color);
+  margin-bottom: 0!important;
+  padding-bottom: 1rem;
+}
+.copyright a{
+  color: var(--title-color);
+}
+.copyright a:hover{
   color: var(--title-color-dark);
 }

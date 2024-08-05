@@ -2,12 +2,13 @@
 $servername = "localhost"; 
 $username = "root"; 
 $password = ""; 
-$dbname = "rbsps_db";  
+$database = "school_db";  
 
-$db = mysqli_connect($servername, $username, $password, $dbname); 
+$conn = new mysqli($servername, $username, $password, $database);
 
-if (!$db) {       	
-    die("Connection failed: " . mysqli_connect_error());
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 
 ?>

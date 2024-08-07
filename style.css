@@ -465,7 +465,7 @@ footer .copyright {
     display: none;
 }
 
-/* gallary page corsol transition*/
+/* gallery page corsol transition*/
 .move-out-from-left {
     animation: moveOutLeft 0.5s ease-in-out;
 }
@@ -515,7 +515,7 @@ footer .copyright {
     animation: moveToP1Right 0.5s ease-in-out;
 }
 
-/* gallary page corsol responsove*/
+/* gallery page corsol responsove*/
 @keyframes moveOutLeft {
     0% {
         transform: scale(0.75) translateX(0%);

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>SRBSPS</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
   <link rel="stylesheet" href="main-style.css?<?php echo time(); ?>">
@@ -39,7 +39,7 @@
           <li><a href="admission.php" class="nav__link">Admission</a></li>
           <li><a href="contact.php" class="nav__link">Contact</a></li>
 
-          <li><a href="gallary.php" class="nav__link">Gallery</a></li>
+          <li><a href="gallery.php" class="nav__link">Gallery</a></li>
 
           <!--=============== DROPDOWN 2 ===============-->
           <li class="dropdown__item">
@@ -128,13 +128,27 @@
 
   <section id="message">
     <h1>Principal's Message</h1>
-    <div>
+    <div class="message-container">
       <div>
         <img src="images/home/principal.jpg" alt="">
       </div>
-      <div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quos magnam fuga quam dolor quod rerum
-          veniam dicta nam alias. Aliquam voluptatem natus fugiat soluta doloremque dolor eum sunt voluptates!
+      <div class="m-text">
+        <p><p>Dear Students, Parents, and Esteemed Members of the School Community,</p>
+
+<p>Welcome to Shri R. B. Singh Public School's website. We are committed to nurturing young minds and fostering an environment where every student can reach their potential.</p>
+
+<p>Education at Shri R. B. Singh Public School goes beyond academics. We inspire lifelong learners and responsible citizens, guided by our dedicated faculty and staff who emphasize intellectual and ethical growth.</p>
+
+<p>We celebrate diversity and encourage students to explore their interests and talents through a variety of co-curricular activities, from sports and arts to science and technology.</p>
+
+<p>Our values of integrity, respect, and compassion form the core of our school culture, preparing students to face future challenges with confidence and resilience.</p>
+
+<p>Explore our website to learn more about our programs and initiatives. Together, we create a nurturing environment where every student can thrive.</p>
+
+<p>Thank you for being part of the SRBSPS family. Let's work together to inspire and empower our young learners.</p>
+
+<p>Warm regards,</p>
+
           <span>Mr. Digamber Singh <br /> (Principal)</span>
         </p>
       </div>
@@ -165,7 +179,7 @@
     </div>
     <div class="banner">
       <div class="image-wrapper">
-        <img src="images/home/hero3.jpg" alt="Inspire">
+        <img src="images/home/hero4.jpg" alt="Inspire">
         <div class="border-animation"></div>
         <div class="overlay">
           <h3>Inspire</h3>
@@ -240,9 +254,8 @@
       <div class="sec f-aboutus">
         <h2>About us</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolorum tempora praesentium quia
-          obcaecati? Perferendis inventore delectus ipsum temporibus ea numquam. Quos eos nulla culpa ex, vero ad
-          numquam autem!
+          
+Founded in 2008, Shri R. B. Singh Public School, affiliated with the UP Board, offers a balanced curriculum and holistic development. It focuses on academic excellence and extracurricular growth in a supportive environment.
         </p>
       </div>
       <div class="sec f-quick-links">
@@ -251,7 +264,7 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Admission</a></li>
-          <li><a href="#">Gallary</a></li>
+          <li><a href="#">Gallery</a></li>
           <li><a href="#">Features</a></li>
         </ul>
       </div>

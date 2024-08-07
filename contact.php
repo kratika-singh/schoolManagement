@@ -8,7 +8,7 @@
     <title>RBSPS</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main-style.css">
     <script src="https://kit.fontawesome.com/07c5373a02.js" crossorigin="anonymous"></script>
 </head>
 
@@ -49,25 +49,62 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 <body>
-    <section id="header">
-        <a href="#"><img src="Logo-with-text.jpg" alt="" width="200px" height="100px"></a>
-        <div>
-            <ul id="navbar">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="admission.php">Admission</a></li>
-                <li><a href="gallary.php">Gallery</a></li>
-                <li><a class="active" href="#">Contact Us</a></li>
-                <li><a href="loginlanding.php">Login</a></li>
-            </ul>
-        </div>
-    </section>
+<header class="header">
+    <nav class="nav nav-container">
+      <div class="nav__data">
+        <a href="#" class="nav__logo">
+          <img src="images/Logo/Logo-with-text.jpg" alt="" />
+        </a>
 
-    <section id="page-header" class="about-header">
-        <div>
-            <h2>Contact Us</h2>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars nav__burger"></i>
+          <i class="fa-solid fa-x nav__close"></i>
         </div>
-    </section>
+      </div>
+
+      <!--=============== NAV MENU ===============-->
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="index.php" class="nav__link ">Home</a></li>
+
+          <li><a href="about.php" class="nav__link ">About</a></li>
+          <li><a href="admission.php" class="nav__link">Admission</a></li>
+          <li><a href="contact.php" class="nav__link active">Contact</a></li>
+
+          <li><a href="gallery.php" class="nav__link">Gallery</a></li>
+
+          <!--=============== DROPDOWN 2 ===============-->
+          <li class="dropdown__item">
+            <div class="nav__link">
+              Login <i class="fa-solid fa-angle-down dropdown__arrow"></i>
+            </div>
+
+            <ul class="dropdown__menu">
+              <li>
+                <a href="loginstudent.php" class="dropdown__link"> Student </a>
+              </li>
+
+              <li>
+                <a href="loginteacher.php" class="dropdown__link"> Teacher </a>
+              </li>
+
+              <li>
+                <a href="loginadmin.php" class="dropdown__link"> Admin </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="space">
+  </div>
+
+  <section id="a-img">
+    <h2>Contact us</h2>
+  </section>
+
 
     <section id="c-main">
         <div id="c-form">
@@ -114,52 +151,70 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </section>
 
-    <footer class="section-p1">
-        <div class="col">
-            <h4>Academic</h4>
-            <a href="#">Information Sheets</a>
-            <a href="#">Transfer Certificate</a>
-            <a href="#">Awards and Achievements</a>
-            <a href="#">Academic Calender</a>
-            <a href="#">Syllabus</a>
-        </div>
-        <div class="col">
-            <h4>Infrastructure</h4>
-            <a href="#">About us</a>
-            <a href="#">Library</a>
-            <a href="#">Computer Lab</a>
-            <a href="#">Sports</a>
-            <a href="#">Transport</a>
-        </div>
-        <div class="col">
-            <h4>Admission</h4>
-            <a href="#">Admission Process</a>
-            <a href="#">Fee Structure</a>
-            <a href="#">Enquiry</a>
-            <a href="#">Download Prospectus</a>
-            <a href="#">FAQ's</a>
-        </div>
-        <div class="col">
-            <h4>Get In Touch</h4>
-            <div class="f-list">
-                <p>If you have any query, You can Contact by any <br> following ways </p>
-                <ul>
-                    <li><i class="fa-solid fa-house"></i> &nbsp; Nasirpur, Sadabad, Hathras - 204101 <br> (U.P.) India
-                    </li>
-                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+919761996622">+91 9761996622</a></li>
-                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:drasmai@gmail.com">drasmai@gmail.com</a>
-                    </li>
-                </ul>
-            </div>
+    <section id="footer">
+    <div class="footer-container">
+      <div class="sec f-aboutus">
+        <h2>About us</h2>
+        <p>
+        Founded in 2008, Shri R. B. Singh Public School, affiliated with the UP Board, offers a balanced curriculum and holistic development. It focuses on academic excellence and extracurricular growth in a supportive environment.
 
-        </div>
+        </p>
+      </div>
+      <div class="sec f-quick-links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="about.php">About</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <li><a href="admission.php">Admission</a></li>
+          <li><a href="gallery.php">Gallery</a></li>
+          <li><a href="index.php#features">Features</a></li>
+        </ul>
+      </div>
 
-        <div class="copyright">
-            <p>&copy; 2023 Shri R.B. Singh Public School | Developed by <a href="#"><Strong> Kratika Singh</Strong></a>
+      <div class="sec f-contact">
+        <h2>Contact Info</h2>
+        <ul class="info">
+          <li>
+            <span><i class="fa fa-map-marker"></i></span>
+            <p>Nasirpur, Sadabad, Hathras <br> (U.P.) India <br>204101</p>
+          </li>
+          <li>
+            <span><i class="fa fa-phone"></i></span>
+            <p><a href="tel:+919761996622">+91 9761996622</a></p>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <p>
+              <a href="mailto:drasmai@gmail.com">drasmai@gmail.com</a>
             </p>
-        </div>
-    </footer>
+          </li>
+        </ul>
+      </div>
+    </div>
 
+  </section>
+  <div class="copyright">
+    <p>&copy; 2024 Shri R.B. Singh Public School | Developed by <a href="https://kratika-singh.github.io/portfolio/"
+        target="_blank" rel="noopener noreferrer"><Strong> Kratika Singh</Strong></a>
+    </p>
+  </div>
+
+  <script>
+    const showMenu = (toggleId, navId) => {
+      const toggle = document.getElementById(toggleId),
+        nav = document.getElementById(navId);
+
+      toggle.addEventListener("click", () => {
+        // Add show-menu class to nav menu
+        nav.classList.toggle("show-menu");
+
+        // Add show-icon to show and hide the menu icon
+        toggle.classList.toggle("show-icon");
+      });
+    };
+
+    showMenu("nav-toggle", "nav-menu");
+  </script>
 
 </body>
 

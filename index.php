@@ -200,11 +200,7 @@
               <li>
 
                 <?php
-
-                $servername = "localhost";
-                $username = "root";
-                $password = "";
-                $database = "school_db";
+require 'connection.php';
                 // $user = $_GET['username'];
                 $conn = mysqli_connect($servername, $username, $password, $database);
                 $sql = "SELECT * FROM `notice`";

@@ -101,25 +101,25 @@
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <a href="images/gallery/gallary1.jpg" data-fancybox="gallery">
+                    <a href="images/home/hero1.jpg" data-fancybox="gallery">
                         <img src="images/home/hero1.jpg" />
                     </a>
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <a href="images/gallery/gallary2.jpg" data-fancybox="gallery">
+                    <a href="images/about/lib.jpg" data-fancybox="gallery">
                         <img src="images/about/lib.jpg" />
                     </a>
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <a href="images/gallery/gallary3.jpg" data-fancybox="gallery">
+                    <a href="images/home/hero2.jpg" data-fancybox="gallery">
                         <img src="images/home/hero2.jpg" />
                     </a>
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <a href="images/gallery/gallary4.jpg" data-fancybox="gallery">
+                    <a href="images/home/hero3.jpg" data-fancybox="gallery">
                         <img src="images/home/hero3.jpg" />
                     </a>
                 </div>

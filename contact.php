@@ -15,13 +15,7 @@
 
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "school_db";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
-
+require 'connection.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name= $_POST['name'];

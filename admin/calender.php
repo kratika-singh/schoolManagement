@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
         </div>
         <div class="sidebar-menu">
             <ul>
-                <li class="active">
+                <li>
                     <a href="#">
                         <i class="fa-sharp fa-solid fa-house"></i>
                         <span>Home</span>
@@ -106,8 +106,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
                         <span>Queries</span>
                     </a>
                 </li>
-                <li>
-                    <a href="manageQuery.php">
+                <li  class="active">
+                    <a href="#">
                         <i class="fa-regular fa-calendar-check"></i>
                         <span>Calender</span>
                     </a>
@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' ) {
     <section class="main-content">
         <div class="modal-content">
         <h2>Add Event</h2>
-        <form id="eventForm" action="calendar.php" method="POST">
+        <form id="eventForm" action="calender.php" method="POST">
             <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" id="title" name="title" class="form-control" required>

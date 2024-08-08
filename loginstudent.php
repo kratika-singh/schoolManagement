@@ -1,12 +1,5 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "school_db";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
-// $user = $_GET['username'];
+require 'connection.php';
 
 ?>
 

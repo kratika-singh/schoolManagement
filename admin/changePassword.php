@@ -131,6 +131,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <span>Queries</span>
                     </a>
                 </li>
+                <li>
+                    <a href="calender.php">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        <span>Calender</span>
+                    </a>
+                </li>
                 <li class="active">
                     <a href="changePassword.php">
                         <i class="fa-solid fa-wrench"></i>

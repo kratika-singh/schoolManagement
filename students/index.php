@@ -1,11 +1,6 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "school_db";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
+require '../connection.php';
 // $user = $_GET['username'];
 session_start();
 
@@ -167,16 +162,15 @@ $user = $_SESSION['username'];
                         <h6 class="mb-2 pb-1">Gender: </h6>
                         <?php
                         $gend = $row['gender'];
-                        echo $gend;
                         
                         ?>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender" value="option1" disabled <?php if($gend=='male'){echo 'checked';}?> />
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender" value="female" disabled <?php if($gend=='female'){echo 'checked';}?> />
                             <label class="form-check-label" for="femaleGender">Female</label>
                         </div>
 
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender" value="option2" disabled <?php if($gend=='female'){echo 'checked';}?> />
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender" value="male" disabled <?php if($gend=='male'){echo 'checked';}?> />
                             <label class="form-check-label" for="maleGender">Male</label>
                         </div>
 

@@ -1,12 +1,6 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "school_db";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
-
+require '../connection.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $filename = $_FILES["upload"]["name"];
 $tempname = $_FILES["upload"]["tmp_name"];

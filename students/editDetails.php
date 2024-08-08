@@ -1,11 +1,6 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "school_db";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
+require '../connection.php';
 $user = $_GET['username'];
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -225,7 +220,7 @@ $row = mysqli_fetch_assoc($result)
 
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
-                                value="option" />
+                                value="other" />
                             <label class="form-check-label" for="otherGender">Other</label>
                         </div>
 

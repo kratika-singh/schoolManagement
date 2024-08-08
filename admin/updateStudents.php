@@ -1,12 +1,5 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "school_db";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
-
+require '../connection.php';
 $admno=$_GET['admno'];
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -220,19 +213,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
-                            value="option1" checked />
+                            value="female" checked />
                         <label class="form-check-label" for="femaleGender">Female</label>
                     </div>
 
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
-                            value="option2" />
+                            value="male" />
                         <label class="form-check-label" for="maleGender">Male</label>
                     </div>
 
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
-                            value="option3" />
+                            value="other" />
                         <label class="form-check-label" for="otherGender">Other</label>
                     </div>
 

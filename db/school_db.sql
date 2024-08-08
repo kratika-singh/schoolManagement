@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 24, 2023 at 09:14 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- Generation Time: Aug 07, 2024 at 07:47 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,7 +32,7 @@ CREATE TABLE `admin` (
   `username` varchar(100) NOT NULL,
   `name` varchar(100) NOT NULL,
   `pass` varchar(260) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `admin`
@@ -54,7 +54,7 @@ CREATE TABLE `complain` (
   `description` text NOT NULL,
   `des` varchar(100) NOT NULL,
   `whenDid` date NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `complain`
@@ -63,6 +63,27 @@ CREATE TABLE `complain` (
 INSERT INTO `complain` (`id`, `toWho`, `byWho`, `description`, `des`, `whenDid`) VALUES
 (1, 'ewe', 'we', 'ew', '', '2023-04-23'),
 (2, 'ds', 'get', 'dasfde', 'das', '2023-04-23');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `events`
+--
+
+CREATE TABLE `events` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `start_date` date NOT NULL,
+  `end_date` date NOT NULL,
+  `description` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `events`
+--
+
+INSERT INTO `events` (`id`, `title`, `start_date`, `end_date`, `description`) VALUES
+(1, 'werftyu', '2024-08-12', '2024-08-16', 'fweertreyty');
 
 -- --------------------------------------------------------
 
@@ -79,7 +100,7 @@ CREATE TABLE `homework` (
   `due` datetime NOT NULL DEFAULT current_timestamp(),
   `remark` varchar(500) NOT NULL,
   `pathS` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `homework`
@@ -107,7 +128,7 @@ CREATE TABLE `notice` (
   `date` datetime NOT NULL DEFAULT current_timestamp(),
   `description` text NOT NULL,
   `path` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `notice`
@@ -135,7 +156,7 @@ CREATE TABLE `query` (
   `address` text NOT NULL,
   `date` datetime NOT NULL,
   `reason` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `query`
@@ -166,7 +187,7 @@ CREATE TABLE `student` (
   `dob` date DEFAULT NULL,
   `pass` varchar(260) NOT NULL,
   `path` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `student`
@@ -175,7 +196,8 @@ CREATE TABLE `student` (
 INSERT INTO `student` (`sid`, `name`, `class`, `ph`, `admno`, `gender`, `fname`, `mname`, `email`, `address`, `username`, `lastname`, `dob`, `pass`, `path`) VALUES
 (9, 'er', 1, 2, 1234, 'option1', 'ge', 'gr', 'gds@ah', 'fr', 'r', 'ge', '1212-12-12', '1234', '../images/simg/IMG-20230326-WA0004.jpg'),
 (10, 'Shibli', 0, 12, 0, 'option2', 'Ahmad', 'ewf', 'abc@xyzabc.com', 'we', 'w', 'Shibli', '1212-12-12', '1234', ''),
-(15, 'ds', 1, 12, 123, 'option1', 'ds', 'ds', 'arshibli19@gmail.com', 'dass', 'dsa', 'ds', '1111-11-11', '12345', '../images/simg/1681678780494.jpg');
+(15, 'ds', 1, 12, 123, 'option1', 'ds', 'ds', 'arshibli19@gmail.com', 'dass', 'dsa', 'ds', '1111-11-11', '12345', '../images/simg/1681678780494.jpg'),
+(17, 'Kratika', 1, 2147483647, 12345, '', 'qwertyui', 'qwertyu', 'kratika3770@gmail.com', 'H. NO. 45 VIKAS LOK COLONY', 'kratika', 'Singh', '0000-00-00', '12345', '../images/simg/WhatsApp Image 2024-07-09 at 1.03.05 PM.jpeg');
 
 -- --------------------------------------------------------
 
@@ -187,7 +209,14 @@ CREATE TABLE `subject` (
   `id` int(11) NOT NULL,
   `class` varchar(10) NOT NULL,
   `name` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `subject`
+--
+
+INSERT INTO `subject` (`id`, `class`, `name`) VALUES
+(2, 'Class 2', 'english');
 
 -- --------------------------------------------------------
 
@@ -210,7 +239,7 @@ CREATE TABLE `teacher` (
   `address` text NOT NULL,
   `pass` varchar(260) NOT NULL,
   `path` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `teacher`
@@ -233,6 +262,12 @@ ALTER TABLE `admin`
 -- Indexes for table `complain`
 --
 ALTER TABLE `complain`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `events`
+--
+ALTER TABLE `events`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -290,6 +325,12 @@ ALTER TABLE `complain`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT for table `events`
+--
+ALTER TABLE `events`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `homework`
 --
 ALTER TABLE `homework`
@@ -311,13 +352,13 @@ ALTER TABLE `query`
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `subject`
 --
 ALTER TABLE `subject`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `teacher`

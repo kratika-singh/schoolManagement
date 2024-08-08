@@ -7,7 +7,7 @@
   <title>SRBSPS</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
-  <link rel="stylesheet" href="main-style.css?<?php echo time(); ?>">
+  <link rel="stylesheet" href="main-style.css">
   <script src="https://kit.fontawesome.com/07c5373a02.js" crossorigin="anonymous"></script>
 </head>
 

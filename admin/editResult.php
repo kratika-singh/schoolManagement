@@ -1,6 +1,8 @@
 <!-- todo -->
-
-
+ <?php
+require '../connection.php';
+require 'res.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">

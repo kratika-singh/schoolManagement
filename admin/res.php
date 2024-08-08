@@ -1,11 +1,6 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "school_db";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
+require 'connection.php';
 $sid = $_GET['sid'];
 
 // $sql1 = "SELECT * FROM `student` where `sid`=$sid;";

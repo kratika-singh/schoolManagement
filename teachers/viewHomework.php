@@ -103,21 +103,8 @@
 
     <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "school_db";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
-session_start();
+require '../connection.php';
 ?>
-
-
-
-
-
-
-
     <div class="table-con" style="width: 54%; margin-left:250px; padding-top: 70px;">
 
         <div class="container my-4">

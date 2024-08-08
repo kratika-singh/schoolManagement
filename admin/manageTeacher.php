@@ -4,13 +4,7 @@ $insert = false;
 $update = false;
 $delete = false;
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "school_db";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
-
+require '../connection.php';
 if (!$conn) {
     die("Sorry access denied" . mysqli_connect_error());
 }

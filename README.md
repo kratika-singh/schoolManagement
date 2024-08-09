@@ -2,8 +2,6 @@
 
 Welcome to the **Shri RB Singh Public School Management System**! This project is a comprehensive and user-friendly platform designed to streamline administrative tasks within educational institutions. Whether you're a school administrator, teacher, or student, this system simplifies your work, enhances communication, and improves overall efficiency.
 
-![School Management System](https://linktoyourimage.com/image.png)
-
 ## 🚀 Live Demo
 
 Check out the live demo: [School Management System](https://srbsps.rf.gd/)
@@ -64,20 +62,18 @@ Built with security in mind, the system ensures that all data is protected. Plus
 - Access the system via http://localhost/schoolManagement
 
 ## 📷 Screenshots
-![Landing Page](https://github.com/kratika-singh/schoolManagement/images/landing.jpg)
-![Dashboard](https://github.com/kratika-singh/schoolManagement/images/dashboard.jpg)
+### Landing Page
+![Landing Page](https://github.com/kratika-singh/schoolManagement/blob/master/images/landing.jpg)
+### Dashboard
+![Dashboard](https://github.com/kratika-singh/schoolManagement/blob/master/images/dashboard.jpg)
 
 ## 🤝 Contributing
 Contributions are welcome! If you have suggestions, feature requests, or bug reports, please open an issue or submit a pull request.
 
 ## 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👨‍💻 Author
-
-- **Kratika** - [GitHub Profile](https://github.com/yourusername)
+This project is licensed under the MIT License - see the LICENSE(LICENSE) file for details.
 
 ## 🌟 Acknowledgments
-![Acknowledgement](https://drive.google.com/file/d/1nkpS3Z0Sr3RDf9qUtzYFvYJyAmqDha3b/view?usp=sharing)
 - Special thanks to [Shri RB Singh Public School](https://srbsps.rf.gd/) for the inspiration and opportunity to build this system.
 - Gratitude to the open-source community for providing valuable resources and tools.
+<img src="https://github.com/kratika-singh/schoolManagement/blob/master/images/Picture1.png" alt="Description" style="width:200px;height:300px;">

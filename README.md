@@ -64,8 +64,8 @@ Built with security in mind, the system ensures that all data is protected. Plus
 - Access the system via http://localhost/schoolManagement
 
 ## 📷 Screenshots
-![Dashboard](https://linktoyourimage.com/dashboard.png)
-![Grade Management](https://linktoyourimage.com/grades.png)
+![Landing Page](https://github.com/kratika-singh/schoolManagement/images/landing.jpg)
+![Dashboard](https://github.com/kratika-singh/schoolManagement/images/dashboard.jpg)
 
 ## 🤝 Contributing
 Contributions are welcome! If you have suggestions, feature requests, or bug reports, please open an issue or submit a pull request.
@@ -78,6 +78,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **Kratika** - [GitHub Profile](https://github.com/yourusername)
 
 ## 🌟 Acknowledgments
-
+![Acknowledgement](https://drive.google.com/file/d/1nkpS3Z0Sr3RDf9qUtzYFvYJyAmqDha3b/view?usp=sharing)
 - Special thanks to [Shri RB Singh Public School](https://srbsps.rf.gd/) for the inspiration and opportunity to build this system.
 - Gratitude to the open-source community for providing valuable resources and tools.

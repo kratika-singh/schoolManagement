@@ -1,4 +1,4 @@
-# 🎓 Shri RB Singh Public School Management System
+# 🎓 School Management System
 
 Welcome to the **Shri RB Singh Public School Management System**! This project is a comprehensive and user-friendly platform designed to streamline administrative tasks within educational institutions. Whether you're a school administrator, teacher, or student, this system simplifies your work, enhances communication, and improves overall efficiency.
 
